@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>약병</title>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylecss.css">
+        <style>   
+                    /*body 초기화*/
+        body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;  
+        background: linear-gradient(90deg, #135569, #3681ad, #7bd2da);
+        }
+
+        p {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 5px;
+        
+        }
+        div > p{
+            font-size: 20px;
+        }
+
+        nav {   
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background: linear-gradient(90deg, #0b4353, #1674aa, #30c1ce, #89e2e2, #bbd9dd);
+        }
+
+        ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+
+        #main-menu > li {
+        float: left;
+        position: relative;
+        }
+
+        #main-menu > li > a {
+        font-size: 20px;
+        color: rgba(255,255,255,0.85);
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display: block;
+        padding: 14px 36px;
+        border-right: 1px solid rgba(0,0,0,0.15);
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        }
+
+        #main-menu > li:nth-child(1) > a {
+        border-left: 1px solid rgba(0,0,0,0.15);
+        }
+
+        #sub-menu {
+        position: absolute;
+        background: #bbbfcc;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.15s ease-in;
+        }
+
+        #sub-menu > li {
+        padding: 7px 28px;
+        border-bottom: 1px solid rgba(0,0,0,0.15);
+        }
+
+        #sub-menu > li >  a {
+        color: rgba(255,255,255,0.6);
+        text-decoration: none;
+        }
+
+        #main-menu > li:hover #sub-menu {
+        opacity: 1;
+        visibility: visible;
+        }
+
+        #sub-menu > li >  a:hover {
+        text-decoration: underline;
+        }
+
+        section {
+        column-width: 15em;
+        background: #dadadf;
+        padding: 2em 12em;
+        }
+       
+
+        .main_list {
+            width: 900px;
+            margin-top: 80px;
+            
+        }
+
+        .list_start {
+            text-align: center;
+            line-height: 250px;
+            
+        }
+
+        .list_detail {
+            display: inline-block;
+            width: 200px;
+            height: 170px;
+            border: 1px solid;
+            background-color: #ffffff;
+        }
+
+        .paging_start{
+            text-align: center;
+        }
+        </style>
+</head>
+    <body>
+        <p>인천 좋은 병원 안내</p>
+        <nav role="navigation">
+        <ul id="main-menu">
+            <li><a href="#">병원정보</a>
+                <ul id="sub-menu">
+                    <li><a href="https://map.kakao.com/" aria-label="subemnu">지도애서 검색</a></li>
+                    <li><a href="지역별좋은병원.html" aria-label="subemnu">지역별<br>좋은 병원</a></li>
+                </ul>
+                </li>
+            <li><a href="#">약국정보</a>
+            <ul id="sub-menu">
+                <li><a href="https://map.kakao.com/" aria-label="subemnu">지도에서 검색</a></li>
+                <li><a href="#" aria-label="https://www.pharm114.or.kr/common_files/sub1_page1.asp">심야 운영<br>약국</a></li>
+                <li><a href="#" aria-label="https://www.pharm114.or.kr/common_files/sub1_page1.asp">휴일 운영<br>약국</a></li>
+            </ul>
+            </li>
+            <li><a href="#">의료정보</a>
+            <ul id="sub-menu">
+                <li><a href="#" aria-label="subemnu">코로나 선별 진료소</a></li>        </ul>
+            </li>
+            <li><a href="http://www.hira.or.kr/re/diag/getNewDiagNondeductibleJudge.do?pgmid=HIRAA030009010000">비급여정보</a>
+        </ul>
+        </nav>
+        <!-- 리스트 불러오기  -->
+	<div class="main_list">
+		<!-- 리스트 -->
+		<div class="list_start">
+			<div class="list_detail"><p
+                style=
+                "background-image: url('https://static.vecteezy.com/system/resources/previews/003/192/527/non_2x/high-blood-pressure-black-glyph-icon-vector.jpg');
+                background-repeat: no-repeat;
+                background-size: 65%; background-position: top;">
+                <a href="인천_고혈압.html">고혈압</a></p></div>
+			<div class="list_detail"><p style=
+                "background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAADAwMB9fX3Kysqvr6+3t7f5+fmlpaXc3NxWVlbf39/8/Py7u7vu7u54eHjn5+cmJiZDQ0OdnZ1lZWUdHR3X19c1NTVubm4WFharq6uSkpJhYWGKiopRUVFMTEwwMDCLi4sQEBBycnITExM8PDwyN5qRAAAE3ElEQVR4nO2d61arMBBGoaVae6Gt2npBj9VzfP9XPFKWWpvJJChJ+PDbv1xLxrClUDKZJFlGCCGEEEIIIYQQcuCiGIWiuEgtl11UmzwsmyqlZbEPrNewLxL5lZdR/GouyxSCy2h+NaP4glVUwTy/ii14FVkwumIRXTDPoz5vzhMI5vl5RMPrJIbX8QQvkgjmebzv/jSXMOJFTHMX1sS6EyfJDM8iGY6TGY4jGd4lM7yLZJhMMM9pGNLwYdJp737y0DPDzbrzVtZS9qDzVmTMhrdB2nnpkeEuSDu7/hhuAjW07Y3hKlBDq94YhnrVMF+eAjV0Cg07A9PwscWxkIZl3iK5C2k4bncwnmH5drT/RUQ0rDM8t95HAxo272He73iAhs1r2N73cDzD98GOqefxcIblR4BnVhDO8M9HwMwvAM3weEjVb8ATzHDR/lTBDL929ry6lFiGpykJn3EkLMPTjIRP8grK0Bz39/hSRDKUBuTcX4pIhreCofthA2Q4FwTzfO4KAzL8Y4TUON9scAyF5PUBVzcKx/DJYui6iDCG8l1Y47gTYQz/Wg0dgSiGC+P4TxZqJIqhVpyil4+gGMpfFQ36swbFUBF0nDKIoV6KqhaNghjq1cRq5S+IoV7IqJYbghjeqIY3WiiIoSqonzMNg0HDrwz/PpQSGJ+og4kghlPVUM24gRjae4c1ag8RxFAtmtbLmlEMtY+pnhZGMdS+L/RAGMN7q+BED4QxtObanhxxOIa2aUSukQscw6MahWOcxVFAhllpFt5v3NVfSIbm2X4npt+G2fq4s3/tNT8DzPDtgXN2Wy/CsL89G2rFUGtoGAwadgYNg/ELDYc/7ynM9EMpOxCooVOMdoc//zB/CbHYgdTnCtCMhNDy1lnf1Jq5Ob8y7Vzu2XTSJdOZ2EpKwzjQkIY0pCENaUhDGtLwZ4az6ZmFidmRfWc1sQX17r10q+awF/KSSA9qhfC6V32LF72aOcskxQdHjFQ93ZWCA7NhZx//W2fboz6+R57GTJt5JOj+9cbQI9dmrqu8dAf1J9fmcTlGRpDHZOf+5EtpmNHQAg2DQUMJGorQMBg0lKChCJTht968+2OoTgtpMLc0qdxB5kY9Pz95L4x23es/SJkPZ4wwj6GL0/fAbPjVFfIoGDpXwRTmE3Uj4EQ42yd9IF8SdCmeS5stdamhIJ5uNSosjKbCstUHXqb2oGcxIqVhHGhIQxrSkIY07I2hNOwVh1CFrKcMfzek4e9opS38FBbXQGxnpNpZzn+t85/ScnfAWSH/7xeFXI5gJeLOwK0uojadudUtHe8SttsfUN8htc2WtDF36Wyz06rjL/n/ocg7O+vreRxxSFXcr8Ymq/v6V3KCQ8B3qfrO8N0QuL4LbU+m+snheydG3/FYymJbDW2f6cLfMMGu1VlW2pZK6N7wKcnO4/WZv0YxfE21e3zNvDIz71+5dxjalwVp2FfdTzhqS7lTdmpc1kWLmuF6qUTvUn0626IZDgMa4kNDfGiIDw3xoSE+NMSHhvjQEB8a4kNDfGiIDw3xoSE+v8jwsnp8fq4uB2zY1KWNaYgHDfGhIT6lxRBllN4D2VDfKAiLpWjoMU8Wh0fB0DnDEovmKjaLEa2GdwUPzOsKoMNPdYVR+kInQgghhBBCCCGEYPEfkLhJks8xyUgAAAAASUVORK5CYII=');
+                background-repeat: no-repeat;
+                background-size: 60%; background-position: top;">
+                <a href="인천_당뇨.html">당뇨</a></p></div>
+			<div class="list_detail"><p style=
+                "background-image: url('https://media.istockphoto.com/vectors/large-intestine-vector-id1188177759?k=20&m=1188177759&s=612x612&w=0&h=-yiY1jSwBJNVH9gOS4YxMDAPfgjxAP6CE6EBXXjM7Ck=');
+                background-repeat: no-repeat;
+                background-size: 65%; background-position: top;">
+                <a href="인천_대장암.html">대장암</a></p></div>
+			<div class="list_detail"><p style=
+                "background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZYi3sgBkgINfOBH_BRXFaUSsIyUBv0hxHwQ1EV6QJyYOFQ8aOdrkYcojHG55bfXid2s&usqp=CAU');
+                background-repeat: no-repeat;
+                background-size: 50%; background-position: top;">
+                <a href="인천_위암.html">위암</a></p></div>
+			<div class="list_detail"><p style=
+                "background-image: url('https://media.istockphoto.com/vectors/human-lungs-icon-black-vector-illustration-respiration-lung-symbol-vector-id1214195014?k=20&m=1214195014&s=612x612&w=0&h=tihcHkZsu6yjTxQDVKKb759bdQMX4vOR60Rw0xO6szc=');
+                background-repeat: no-repeat;
+                background-size: 50%; background-position: top;">
+                <a href="인천_폐암.html">폐암</a></p></div>
+			<div class="list_detail"><p style=
+                "background-image: url('data:image/jpeg;base64,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');
+                background-repeat: no-repeat;
+                background-size: 55%; background-position: top;">
+                <a href="인천_산부인과.html">산부인과</a></p></div>			
+                <div class="list_detail"><p style=
+                "background-image: url('data:image/jpeg;base64,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');
+                background-repeat: no-repeat;
+                background-size: 70%; background-position: top;">
+                <a href="인천_안과.html">안과</a></p></div>
+		</div>
+
+</body>
+</html>
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>약병_지역별좋은병원</title>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylecss.css">
+        <style>
+            .tg {
+                border-collapse: collapse;
+                border-color: #aabcfe;
+                border-spacing: 0;
+                width: 80%;
+                height: 100%;
+                margin-top: 10px;
+            }
+    
+            .tg td {
+                background-color: #e8edff;
+                border-color: #aabcfe;
+                border-style: solid;
+                border-width: 1px;
+                color: #669;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+            }
+    
+            .tg th {
+                background-color: #b9e0ec;
+                border-color: #aabcfe;
+                border-style: solid;
+                border-width: 1px;
+                color: #039;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+            }
+    
+            .tg .tg-0jzc {
+                background-color: #FFF;
+                border-color: #000000;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top
+            }
+    
+            .tg .tg-tgze {
+                background-color: #ffffff;
+                border-color: #000000;
+                font-weight: bold;
+                text-align: left;
+                vertical-align: top
+            }
+    
+            .tg .tg-47ws {
+                border-color: #000000;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top
+            }
+    
+            .tg .tg-mqa1 {
+                border-color: #000000;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top
+            }
+    
+            .tg .tg-uxvt {
+                background-color: #ffffff;
+                border-color: #000000;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top
+            }
+    
+            .tg .tg-mums {
+                background-color: #ffffff;
+                border-color: #000000;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top
+            }
+    
+            .tg .tg-dkc9 {
+                background-color: #FFF;
+                border-color: #000000;
+                color: #00E;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: top
+            }
+    
+            /*body 초기화*/
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                overflow-x: hidden;
+                background: linear-gradient(90deg, #135569, #3681ad, #7bd2da);
+            }
+    
+            p {
+                font-size: 40px;
+                color: rgb(0, 0, 0);
+                margin-bottom: 5px;
+    
+            }
+    
+            div>p {
+                font-size: 20px;
+            }
+    
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                background: linear-gradient(90deg, #0b4353, #1674aa, #30c1ce, #89e2e2, #bbd9dd);
+            }
+    
+            ul,
+            li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+    
+            #main-menu>li {
+                float: left;
+                position: relative;
+            }
+    
+            #main-menu>li>a {
+                font-size: 20px;
+                color: rgba(255, 255, 255, 0.85);
+                text-align: center;
+                text-decoration: none;
+                letter-spacing: 0.05em;
+                display: block;
+                padding: 14px 36px;
+                border-right: 1px solid rgba(0, 0, 0, 0.15);
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            }
+    
+            #main-menu>li:nth-child(1)>a {
+                border-left: 1px solid rgba(0, 0, 0, 0.15);
+            }
+    
+            #sub-menu {
+                position: absolute;
+                background: #bbbfcc;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.15s ease-in;
+            }
+    
+            #sub-menu>li {
+                padding: 7px 28px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            }
+    
+            #sub-menu>li>a {
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+            }
+    
+            #main-menu>li:hover #sub-menu {
+                opacity: 1;
+                visibility: visible;
+            }
+    
+            #sub-menu>li>a:hover {
+                text-decoration: underline;
+            }
+    
+            section {
+                column-width: 15em;
+                background: #dadadf;
+                padding: 2em 12em;
+            }
+            </style>
+    </head>
+        <body>
+            <p>인천 좋은 병원 안내[폐암]</p>
+            <nav role="navigation">
+                <ul id="main-menu">
+                    <li><a href="#">병원정보</a>
+                        <ul id="sub-menu">
+                            <li><a href="https://map.kakao.com/" aria-label="subemnu">지도애서 검색</a></li>
+                            <li><a href="지역별좋은병원.html" aria-label="subemnu">지역별<br>좋은 병원</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">약국정보</a>
+                        <ul id="sub-menu">
+                            <li><a href="https://map.kakao.com/" aria-label="subemnu">지도에서 검색</a></li>
+                            <li><a href="#" aria-label="https://www.pharm114.or.kr/common_files/sub1_page1.asp">심야 운영<br>약국</a></li>
+                            <li><a href="#" aria-label="https://www.pharm114.or.kr/common_files/sub1_page1.asp">휴일 운영<br>약국</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">의료정보</a>
+                        <ul id="sub-menu">
+                            <li><a href="#" aria-label="subemnu">코로나 선별 진료소</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.hira.or.kr/re/diag/getNewDiagNondeductibleJudge.do?pgmid=HIRAA030009010000">비급여정보</a>
+                </ul>
+            </nav>
+                <table class="tg">
+                  <thead>
+                    <tr>
+                      <th class="tg-47ws">의료기관명</th>
+                      <th class="tg-47ws">비급여진료비</th>
+                      <th class="tg-47ws">의료자원</th>
+                      <th class="tg-47ws">소재지</th>
+                      <th class="tg-47ws">전화번호</th>
+                      <th class="tg-mqa1">지도</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tg-mums">가톨릭관동대학교 국제성모병원<br>(응급실운영)</td>
+                      <td class="tg-mums">최저: 280,000<br>최고: 280,000</td>
+                      <td class="tg-mums">의사: 182<br>병상: 675</td>
+                      <td class="tg-mums">인천 서구 심곡로 100번길 25-0 인천국제성모병원</td>
+                      <td class="tg-mums">1600-8291</td>
+                      <td class="tg-mums"><a href="http://kkhttp//kko.to/P8CIiin8Ao.to/P8CIiin8A" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+                    </tr>
+                    <tr>
+                      <td class="tg-mums">의료법인 길의료재단 길병원<br>(응급실운영)</td>
+                      <td class="tg-mums">최저: 194,000<br>최고: 337,000</td>
+                      <td class="tg-mums">의사: 527<br>병상: 1,555</td>
+                      <td class="tg-mums">인천 남동구 남동대로 774번길 21-0 의료법인길의료재단길병원</td>
+                      <td class="tg-mums">1577-2299</td>
+                      <td class="tg-mums"><a href="http://kko.to/exfAGNN4j" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+                    </tr>
+                  </tbody>
+                  </table>
+              </div>
+        </div>    
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>약병_지역별좋은병원</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylecss.css">
+    <style>
+        .tg {
+            border-collapse: collapse;
+            border-color: #aabcfe;
+            border-spacing: 0;
+            width: 80%;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+        .tg td {
+            background-color: #e8edff;
+            border-color: #aabcfe;
+            border-style: solid;
+            border-width: 1px;
+            color: #669;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            background-color: #b9e0ec;
+            border-color: #aabcfe;
+            border-style: solid;
+            border-width: 1px;
+            color: #039;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-0jzc {
+            background-color: #FFF;
+            border-color: #000000;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-tgze {
+            background-color: #ffffff;
+            border-color: #000000;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-47ws {
+            border-color: #000000;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-mqa1 {
+            border-color: #000000;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-uxvt {
+            background-color: #ffffff;
+            border-color: #000000;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-mums {
+            background-color: #ffffff;
+            border-color: #000000;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        .tg .tg-dkc9 {
+            background-color: #FFF;
+            border-color: #000000;
+            color: #00E;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: top
+        }
+
+        /*body 초기화*/
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            background: linear-gradient(90deg, #135569, #3681ad, #7bd2da);
+        }
+
+        p {
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 5px;
+
+        }
+
+        div>p {
+            font-size: 20px;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(90deg, #0b4353, #1674aa, #30c1ce, #89e2e2, #bbd9dd);
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #main-menu>li {
+            float: left;
+            position: relative;
+        }
+
+        #main-menu>li>a {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.85);
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            display: block;
+            padding: 14px 36px;
+            border-right: 1px solid rgba(0, 0, 0, 0.15);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        #main-menu>li:nth-child(1)>a {
+            border-left: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        #sub-menu {
+            position: absolute;
+            background: #bbbfcc;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.15s ease-in;
+        }
+
+        #sub-menu>li {
+            padding: 7px 28px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        #sub-menu>li>a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+        }
+
+        #main-menu>li:hover #sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #sub-menu>li>a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            column-width: 15em;
+            background: #dadadf;
+            padding: 2em 12em;
+        }
+    </style>
+</head>
+
+<body>
+    <p>인천 좋은 병원 안내[고혈압]</p>
+    <nav role="navigation">
+        <ul id="main-menu">
+            <li><a href="#">병원정보</a>
+                <ul id="sub-menu">
+                    <li><a href="https://map.kakao.com/" aria-label="subemnu">지도애서 검색</a></li>
+                    <li><a href="지역별좋은병원.html" aria-label="subemnu">지역별<br>좋은 병원</a></li>
+                </ul>
+            </li>
+            <li><a href="#">약국정보</a>
+                <ul id="sub-menu">
+                    <li><a href="https://map.kakao.com/" aria-label="subemnu">지도에서 검색</a></li>
+                    <li><a href="#" aria-label="https://www.pharm114.or.kr/common_files/sub1_page1.asp">심야 운영<br>약국</a></li>
+                    <li><a href="#" aria-label="https://www.pharm114.or.kr/common_files/sub1_page1.asp">휴일 운영<br>약국</a></li>
+                </ul>
+            </li>
+            <li><a href="#">의료정보</a>
+                <ul id="sub-menu">
+                    <li><a href="#" aria-label="subemnu">코로나 선별 진료소</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.hira.or.kr/re/diag/getNewDiagNondeductibleJudge.do?pgmid=HIRAA030009010000">비급여정보</a>
+        </ul>
+    </nav>
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-47ws">의료기관명</th>
+                <th class="tg-47ws">비급여진료비</th>
+                <th class="tg-47ws">의료자원</th>
+                <th class="tg-47ws">소재지</th>
+                <th class="tg-47ws">전화번호</th>
+                <th class="tg-mqa1">지도</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-uxvt">21세기미소내과의원</td>
+                <td class="tg-uxvt">정보없음</td>
+                <td class="tg-uxvt">의사: 1<br>병상: 0</td>
+                <td class="tg-uxvt">인천 남동구 백범로 322 2층<br>(간석동, 진메디칼센터)</td>
+                <td class="tg-uxvt">032-431-7715</td>
+                <td class="tg-tgze"><a href="http://kko.to/JGOcC2NfT" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-uxvt">Dr.송내과의원</td>
+                <td class="tg-uxvt">정보없음</td>
+                <td class="tg-uxvt">의사: 1<br>병상: 0</td>
+                <td class="tg-uxvt">인천 남동구 담방로 45 301호<br>(만수동, 희망프라자)</td>
+                <td class="tg-uxvt">032-469-4266</td>
+                <td class="tg-tgze"><a href="http://kko.to/jcNyPH91U" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-uxvt">가좌우리내과의원</td>
+                <td class="tg-uxvt">정보없음</td>
+                <td class="tg-uxvt">의사: 1<br>병상: 8</td>
+                <td class="tg-uxvt">인천 서구 고래울로 29<br>(가좌동)</td>
+                <td class="tg-uxvt">032-576-8575</td>
+                <td class="tg-tgze"><a href="http://kko.to/pcnxClN4j" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">남동성모외과의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 1<br>병상: 35</td>
+                <td class="tg-mums">인천 남동구 호구포로 388-16<br>(구월동)</td>
+                <td class="tg-mums">032-465-6342</td>
+                <td class="tg-mums"><a href="http://kko.to/N9TWC274T" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">더웰내과의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 3<br>병상: 0</td>
+                <td class="tg-mums">인천 남동구 서창남로 77 메인프라자 501~503호<br>(서창동)</td>
+                <td class="tg-mums">032-469-1237</td>
+                <td class="tg-mums"><a href="http://kko.to/0Dj7ClNfj" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">맹소아청소년과의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 1<br>병상: 0</td>
+                <td class="tg-mums">인천 남동구 방축로 503<br>(간석동, 우성아파트상가)</td>
+                <td class="tg-mums">032-438-1115</td>
+                <td class="tg-dkc9"><a href="http://kko.to/fDvFk274H" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-0jzc">부평정진의원</td>
+                <td class="tg-0jzc">최저 50,000<br>최고 50,000</td>
+                <td class="tg-0jzc">의사: 1<br>병상: 30</td>
+                <td class="tg-0jzc">인천 부평구 마장로 383 2, 3, 4층<br>(산곡동)</td>
+                <td class="tg-mums">032-506-5010</td>
+                <td class="tg-mums"><a href="http://kko.to/kyG7C27fT" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-0jzc">서울삼성내과의원</td>
+                <td class="tg-0jzc"></td>
+                <td class="tg-0jzc">의사: 2<br>병상: 0</td>
+                <td class="tg-0jzc">인천 남동구 호구포로 818 409~412호<br>(구월동, 퍼스트하임프라자)</td>
+                <td class="tg-mums">032-465-0377</td>
+                <td class="tg-mums"><a href="http://kko.to/699vSFSrx" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">우리이비인후과의원</td>
+                <td class="tg-mums">최저: 150,000<br>최고: 150,000</td>
+                <td class="tg-mums">의사: 1<br>병상: 1</td>
+                <td class="tg-mums">인천 미추홀구 미추홀대로 561<br>(주안동)</td>
+                <td class="tg-mums">032-875-9453</td>
+                <td class="tg-mums"><a href="http://kko.to/vvtCH-y9b" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">정앤정내과소아청소년과의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 2<br>병상: 0</td>
+                <td class="tg-mums">인천 미추홀구 미추홀대로 663-1<br>(주안동, 1층 일부, 2층)</td>
+                <td class="tg-mums">032-875-3176</td>
+                <td class="tg-mums"><a href="http://kko.to/bGGTkPYot" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">청라행복내과의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 2<br>병상: 0</td>
+                <td class="tg-mums">인천 서구 중봉대로 588 506, 507호<br>(연희동, 청라센트럴프라자)</td>
+                <td class="tg-mums">032-569-8000</td>
+                <td class="tg-mums"><a href="http://kko.to/fu196y0_D" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">큰나무의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 1<br>병상: 0</td>
+                <td class="tg-mums">인천 강화군 강화읍 중앙로 9 9</td>
+                <td class="tg-mums">032-233-7588</td>
+                <td class="tg-mums"><a href="http://kko.to/Cpx90lwfe" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">푸른가정의학과의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 1<br>병상: 0</td>
+                <td class="tg-mums">인천 부평구 부일로 87<br>(부개동)</td>
+                <td class="tg-mums">032-361-7600</td>
+                <td class="tg-mums"><a href="http://kko.to/1GCrSHTsX" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+            <tr>
+                <td class="tg-mums">행복플러스의원</td>
+                <td class="tg-mums"></td>
+                <td class="tg-mums">의사: 1<br>병상: 0</td>
+                <td class="tg-mums">인천 부평구 주부토로 261 201,202호<br>(갈산동, 신협빌딩)</td>
+                <td class="tg-mums">032-511-5475</td>
+                <td class="tg-mums"><a href="http://kko.to/N4EJC2N40" target="_blank" rel="noopener noreferrer">바로가기</a></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
+</body>
+
+</html>
